@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7f3eb"><title>Quiet Pages</title><style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');
+:root{--paper:#f7f3eb;--ink:#263d35;--muted:#74796e;--line:#deddd2;--sage:#e8ece2;--accent:#b9674e;--white:#fffefa}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased}.shell{max-width:1100px;margin:auto;padding:0 42px}.topbar{height:84px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.wordmark{color:var(--ink);text-decoration:none;font-weight:700;letter-spacing:-.04em;font-size:17px;display:flex;align-items:center;gap:10px}.mark{display:grid;place-items:center;width:29px;height:29px;border-radius:50%;background:#d8e1d1;color:#466150;font-family:'Playfair Display',serif;font-size:15px;letter-spacing:-.08em}.top-note{font-size:12px;color:var(--muted);letter-spacing:.01em}.intro{padding:64px 0 38px;max-width:660px}.eyebrow{margin:0 0 15px;text-transform:uppercase;letter-spacing:.15em;font-size:10px;font-weight:700;color:var(--accent)}h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(38px,5vw,58px);line-height:1.12;letter-spacing:-.035em;font-weight:500;margin:0}.intro-copy{max-width:520px;font-size:15px;line-height:1.75;color:#666d64;margin:19px 0 0}.workbook{display:grid;grid-template-columns:230px 1fr;gap:26px;align-items:start}.topics{display:flex;flex-direction:column;gap:5px;padding-top:8px}.topic{display:flex;align-items:center;justify-content:space-between;width:100%;border:0;background:transparent;text-align:left;padding:12px 14px;border-radius:8px;color:#5e695f;font:500 13px 'DM Sans',sans-serif;cursor:pointer;transition:background .18s,color .18s}.topic:hover{background:#efeee7;color:var(--ink)}.topic[aria-current="page"]{background:var(--sage);color:var(--ink);font-weight:700}.topic .arrow{font-size:16px;opacity:0;transform:translateX(-3px);transition:.18s}.topic[aria-current="page"] .arrow{opacity:1;transform:none}.page{background:var(--white);border:1px solid #e8e5dc;border-radius:12px;padding:32px 38px 34px;min-height:410px;box-shadow:0 8px 30px #39452f08}.page-head{display:flex;justify-content:space-between;gap:12px;align-items:start;border-bottom:1px solid #ebe9e1;padding-bottom:21px}.page-kicker{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:2px 0 8px}.page h2{font-family:'Playfair Display',Georgia,serif;font-size:30px;font-weight:500;letter-spacing:-.02em;margin:0}.page-count{color:#8a8b80;font-size:11px;white-space:nowrap;margin-top:7px}.gentle{font-size:13px;color:#777a70;margin:15px 0 18px;line-height:1.65}.prompt{padding:13px 0 10px;display:grid;grid-template-columns:25px 1fr;gap:10px}.prompt-number{color:#ba755c;font-family:'Playfair Display',Georgia,serif;font-size:16px}.prompt p{margin:0;font-size:14px;line-height:1.65;color:#394c42}.answer{display:block;width:100%;min-height:84px;margin-top:9px;border:1px solid #e4e1d6;border-radius:8px;padding:9px 12px;font:14px/28px 'DM Sans',sans-serif;color:var(--ink);background:#fffefa repeating-linear-gradient(to bottom,transparent 0,transparent 27px,#ebe9e0 27px,#ebe9e0 28px);background-attachment:local;resize:vertical;outline:none;box-sizing:border-box}.answer::placeholder{color:#b3b3a7}.answer:focus{border-color:#c9b29f}.foot-row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:18px;flex-wrap:wrap}.save-state{font-size:11px;color:#8a8b80;min-height:14px}.tool{border:1px solid #e1ded3;background:transparent;border-radius:999px;padding:6px 12px;font:600 11px 'DM Sans',sans-serif;color:#5e695f;cursor:pointer}.tool:hover{background:#efeee7;color:var(--ink)}@media print{body{background:#fff}.topbar,.intro,.topics,.care-note,footer,.foot-row{display:none}.shell{max-width:none;padding:0}.workbook{display:block}.page{border:0;box-shadow:none;min-height:0;padding:0}.answer{border:0;border-bottom:1px solid #bbb;border-radius:0;background:none;min-height:0;overflow:hidden}.prompt{break-inside:avoid}}.care-note{display:flex;gap:13px;align-items:flex-start;border-top:1px solid var(--line);margin-top:44px;padding:19px 0 0;color:#77796f}.care-icon{font-size:15px;color:#bb795e;margin-top:2px}.care-note p{font-size:11px;line-height:1.7;margin:0;max-width:750px}.care-note a{color:var(--ink);font-weight:700;text-underline-offset:2px}footer{display:flex;justify-content:center;gap:8px;padding:24px 0 27px;color:#9b9b90;font-size:10px}.footer-dot{color:#b87961}@media(max-width:700px){.shell{padding:0 20px}.topbar{height:66px}.top-note{font-size:10px}.intro{padding:45px 0 27px}.intro-copy{font-size:14px}.workbook{grid-template-columns:1fr;gap:12px}.topics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;padding:0}.topic{padding:10px 11px;font-size:12px}.topic .arrow{display:none}.page{padding:24px 21px;min-height:0}.page h2{font-size:27px}.care-note{margin-top:32px}}@media(max-width:380px){.shell{padding:0 15px}.top-note{max-width:115px;text-align:right}.topic{font-size:11px}.page{padding:21px 17px}}
+</style></head>
+<body><main class="shell"><header class="topbar"><a class="wordmark" href="#top" aria-label="Quiet Pages home"><span class="mark" aria-hidden="true">qp</span> quiet pages</a><span class="top-note">A workbook for your own notebook</span></header>
+<section class="intro" id="top" aria-labelledby="main-title"><p class="eyebrow">A softer place to begin</p><h1 id="main-title">Make a little room<br>for what you’re carrying.</h1><p class="intro-copy">Choose a page. Take one prompt at a time, and write whatever feels true in your notebook. You can skip anything, pause, or come back later.</p></section>
+<section class="workbook" aria-label="Self-help workbooks"><nav class="topics" aria-label="Choose a workbook" id="topic-list"></nav><article class="page" aria-live="polite" aria-atomic="true" id="workbook-page"></article></section>
+<aside class="care-note"><span class="care-icon" aria-hidden="true">✳</span><p>These pages are for reflection, not a substitute for professional care. If you may hurt yourself or someone else, contact local emergency services or a crisis line now. In the U.S. or Canada, call or text <a href="tel:988">988</a>. Alcohol or sedative withdrawal can be dangerous; ask a medical professional before stopping suddenly.</p></aside><footer><span>Go at your own pace.</span><span class="footer-dot">·</span><span>You don’t have to solve everything today.</span></footer></main><script>
+const workbooks = [
+  { id:'anxiety', title:'When anxiety is loud', gentle:'You don’t need to make the feeling disappear. Start by noticing what’s here.', prompts:['What is my mind warning me about right now? What do I know for certain, and what am I afraid might happen?','Where do I feel this in my body? What might help my body feel 1% safer in this moment?','If someone I cared about felt this way, what would I want them to hear?'] },
+  { id:'low-mood', title:'Depression & low mood', gentle:'Small is enough. You can answer with a word, a sketch, or leave the page blank.', prompts:['What has felt especially heavy lately? What feels hardest to put into words?','What basic need has been hardest to meet lately: rest, food, movement, connection, or something else?','Is there one small thing that has brought even a moment of comfort, connection, or relief?','What is one kind, very manageable thing I could offer myself today?'] },
+  { id:'addiction', title:'Addiction & urges', gentle:'This is a place for curiosity, not blame. Change can take time, and support is available.', prompts:['What tends to happen just before an urge? What feeling, need, or situation might be part of it?','What does using or repeating this behavior offer me in the short term? What do I wish were different afterward?','What has helped me get through an urge, even briefly? What could make that support easier to reach?','Who could I talk with without judgment about a safer next step, such as a doctor, counselor, or recovery group?'] },
+  { id:'trauma', title:'Finding the present moment', gentle:'You are in charge of this page. There is no need to revisit or describe anything painful.', prompts:['Name three things you can see, two things you can feel, and one sound you can hear. What tells you that you are here, now?','Without explaining why, what helps your body feel a little more settled: light, fresh air, a familiar object, space, or someone safe?','What boundary or support would feel protective for you today?'] },
+  { id:'ptsd', title:'Living with PTSD', gentle:'Go slowly. You never need to write down traumatic details. Pause and orient to the present if this becomes overwhelming.', prompts:['What helps me notice that a difficult memory or alarm response is happening, without judging myself for it?','What are a few safe, present-day details I can name: today’s date, where I am, or someone I can contact?','What would I like a trusted person to understand about how to support me?','What professional or community support could I reach out to when I feel ready?'] },
+  { id:'cptsd', title:'Living with complex trauma', gentle:'Healing is not a deadline. You can skip any question, keep answers brief, or close this page.', prompts:['What helps me feel respected and in control in a conversation or relationship?','What signals tell me I might need a pause, more space, or support?','What does a small boundary sound like in my own words?','What qualities do I value in myself that exist beyond what I have been through?'] },
+  { id:'grief', title:'Making space for grief', gentle:'There is no correct pace for grief, and no need to make it neat.', prompts:['What do I miss most today? What memory or small detail is with me?','What has changed in my day-to-day life that I wish others understood?','What might care look like for me in this particular moment?'] },
+  { id:'guilt', title:'Working through guilt', gentle:'You can take responsibility and still treat yourself with care.', prompts:['What do I feel responsible for? What was in my control, and what was outside it?','Is there a repair I can make, or something I can learn for next time?','What would accountability look like without punishing myself forever?'] },
+  { id:'self-worth', title:'Self-worth & kindness', gentle:'You don’t have to feel positive about yourself to begin with honesty.', prompts:['What do I criticize myself for most often? Where did I learn to speak to myself this way?','What would I say to a friend who was struggling with the same thing?','What is one quality, effort, or choice I can acknowledge in myself today?'] },
+  { id:'overwhelm', title:'When everything is too much', gentle:'You don’t have to sort it all out at once. Just notice what is in front of you.', prompts:['What is taking up the most space in my mind right now?','Which part needs attention today, and which part can wait?','What is one next step small enough to do in ten minutes—or one thing I can set down?'] }
+];
+
+const KEY = 'quiet-pages-notebook';
+const topics = document.querySelector('#topic-list');
+const page = document.querySelector('#workbook-page');
+let notebook = {};
+try { notebook = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { notebook = {}; }
+let saveTimer = null;
+let current = workbooks[0];
+
+function persist() {
+  try { localStorage.setItem(KEY, JSON.stringify(notebook)); return true; } catch (e) { return false; }
+}
+
+function setStatus(text) {
+  const status = page.querySelector('.save-state');
+  if (status) status.textContent = text;
+}
+
+function showWorkbook(id) {
+  const book = workbooks.find(item => item.id === id) || workbooks[0];
+  current = book;
+  topics.querySelectorAll('button').forEach(button => {
+    if (button.dataset.id === book.id) button.setAttribute('aria-current', 'page');
+    else button.removeAttribute('aria-current');
+  });
+  const answers = notebook[book.id] || [];
+  const prompts = book.prompts.map((prompt, index) =>
+    '<div class="prompt"><span class="prompt-number">0' + (index + 1) + '</span><div><p>' + prompt + '</p>' +
+    '<textarea class="answer" data-index="' + index + '" rows="3" aria-label="Answer to prompt ' + (index + 1) + '" placeholder="Write here, or skip">' +
+    escapeHtml(answers[index] || '') + '</textarea></div></div>'
+  ).join('');
+  page.innerHTML = '<div class="page-head"><div><p class="page-kicker">Your notebook</p><h2>' + book.title + '</h2></div><span class="page-count">' + book.prompts.length + ' prompts</span></div>' +
+    '<p class="gentle">' + book.gentle + '</p>' + prompts +
+    '<div class="foot-row"><span class="save-state" aria-live="polite">Saved on this device</span><div><button class="tool" type="button" data-action="print">Print</button> <button class="tool" type="button" data-action="clear">Clear answers</button></div></div>';
+}
+
+function escapeHtml(value) {
+  return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+page.addEventListener('input', event => {
+  const field = event.target;
+  if (!field.classList.contains('answer')) return;
+  const list = notebook[current.id] ? notebook[current.id].slice() : [];
+  list[Number(field.dataset.index)] = field.value;
+  notebook[current.id] = list;
+  setStatus('Saving…');
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(() => setStatus(persist() ? 'Saved on this device' : 'Could not save on this device'), 400);
+});
+
+function fitAnswers() {
+  page.querySelectorAll('.answer').forEach(field => {
+    field.style.height = 'auto';
+    field.style.height = field.scrollHeight + 'px';
+  });
+}
+
+page.addEventListener('click', event => {
+  const button = event.target.closest('[data-action]');
+  if (!button) return;
+  if (button.dataset.action === 'print') {
+    fitAnswers();
+    window.print();
+  }
+  if (button.dataset.action === 'clear') {
+    if (!button.dataset.armed) {
+      button.dataset.armed = 'yes';
+      button.textContent = 'Tap again to clear';
+      setTimeout(() => {
+        if (button.isConnected) { delete button.dataset.armed; button.textContent = 'Clear answers'; }
+      }, 4000);
+      return;
+    }
+    delete notebook[current.id];
+    persist();
+    showWorkbook(current.id);
+  }
+});
+
+window.addEventListener('beforeprint', fitAnswers);
+
+workbooks.forEach(book => {
+  const button = document.createElement('button');
+  button.className = 'topic';
+  button.type = 'button';
+  button.dataset.id = book.id;
+  button.innerHTML = '<span>' + book.title.replace('When ', '') + '</span><span class="arrow" aria-hidden="true">→</span>';
+  button.addEventListener('click', () => showWorkbook(book.id));
+  topics.append(button);
+});
+showWorkbook('anxiety');
+
+</script></body></html>
